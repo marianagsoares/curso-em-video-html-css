@@ -1,0 +1,37 @@
+@charset "UTF-8";
+*{ /*configurações globais em css*/
+    font-family: 'Times New Roman', Times, serif;
+}
+    /*lembrar sempre de chamar a tag body quando css externo para estilos serem aplicados em toda a página*/
+body{
+    background-image: linear-gradient(to bottom, #EBEBEB 85%, #DBD2E0, #D1B1CB) ;
+    background-attachment: fixed;
+}
+main{
+    background-color: white;
+    width: 1310px;  /*largura*/
+    padding: 15px; /* acolchoamento é espaço acrescentado nas margens do texto*/
+    box-shadow: 0 0 0; /*optei por não por sombras na caixa (+ cor da sombra)*/
+    margin: auto; /*conteudo do corpo ajusta-se automaticamente*/
+}
+h1{
+    color: #86626E;
+    text-align: center; /*alinhamento do h1*/
+    text-shadow: 0px 0px 0px #553e46; /*Optei por não adicionaer sombras*/
+    font-size: 2em; /*1 em = 16px*/
+    font-family: Helvetica, Arial, sans-serif; 
+    /*se não encontrar uma fonte, tenta a outra*/
+    /*O último termo é um termo genérico para fontes*/
+}
+h2{
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+p{
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px; /* tamanho padrão*/
+    text-align: justify;
+}

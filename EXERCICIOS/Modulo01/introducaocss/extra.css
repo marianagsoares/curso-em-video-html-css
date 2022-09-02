@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.firstp{
+    text-align: right;
+    color: deeppink;
+    font-size: x-large;
+}
+.secondp{
+    text-align: justify;
+    color: darksalmon;
+}

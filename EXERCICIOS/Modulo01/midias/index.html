@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Audios com atribuições não necessárias encontrados na biblioteca de áudio do YouTube -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="estilotextoaudio">
+</head>
+
+<body>
+    <!--Posso ter mais de um estilo dentro da mesma classe-->
+    <h1 class="estilotextoroxo">
+        Vamos aprender a inserir <mark class="estilotextoroxo estilotextoazul">Mídias!</mark></h1>
+    <h2 class="estilotexto">Inserir imagens dinâmicas em HTML</h2>
+    <!--//Se a tela for menor que 1050 apresente a foto-M
+        //Se a tela for menor que 750 apresente foto-P
+        //Se a tela for menor que 500 apresente foto-PP
+        //A base deve ser a imagem padrão e acima adiciona as sources-->
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/foto-PP.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/foto-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-M.png" type="image/png">
+        <img src="Imagens/foto-G.png" alt="imagens dinâmicas">
+    </picture>
+    <h2 class="estilotexto">Reproduzir áudios em HTML</h2>
+    <h3>inserir um áudio</h3>
+    <audio src="Sons/audio1.mp3" controls></audio>
+    <!--Caso navegador não suporte o formato do áudio reproduz texto da tag parágrafo-->
+    <!--metadata carrega apenas algumas infos do arquivo-->
+    <h3>inserir mais de um áudio</h3>
+    <audio preload="metadata" controls>
+        <source src="Sons/audio2.mp3" type="audio/mpeg">
+        <source src="Sons/audio3.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta o áudio, <a href="Sons/audio3.mp3">clique</a> para baixar</p>
+    </audio>
+    <h2 class="estilotexto">Reproduzir vídeos em HTML</h2>
+    <h3>vídeos hospedados no próprio servidor</h3>
+    <video src="Videos/cup-of-coffe.mp4" width="500" height="264" controls></video>
+    <!--Caso navegador não suporte o formato do áudio reproduz texto da tag parágrafo-->
+    <video width="500" height="264" controls poster="Imagens/capavideo.png">
+        <source src="Videos/cup-of-coffe.mp4" type="video/mp4">
+        <source src="Videos/Cup-Of-Coffe.m4v" type="video/mp4">
+        <p>Seu navegador não suporta o vídeo.
+        </p>
+    </video>
+    <!--Vídeo localizado no vimeo-->
+    <h3>vídeos externos</h3>
+    <iframe src="https://player.vimeo.com/video/742967491?h=f7ac4c4821&byline=0&portrait=0" width="500" height="264"
+        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        
+</body>
+
+</html>
